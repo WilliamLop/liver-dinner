@@ -64,6 +64,8 @@ hr,p{
    
   }
 
+
+
 .btn-aumentar{
     background: #43aa8b;
     color: white;
@@ -114,12 +116,27 @@ hr,p{
 }
 
 .nav-item.logo img:hover{
-    border-radius: 20px;
+    border-radius: 5px;
     background: #ced2dc;
 }
+@media screen and (max-width: 460px)  {
+    .aCarrito{
+       margin-left: 130px;
+    }
+  }
+
+li.nav-item.logo {
+
+    margin-left: 200px;
+}
+
+
 
 .cantidadTabla{
     width: 15%;
     border: none;
     border-bottom: 2px solid black;
 }
+
+
+

@@ -217,9 +217,12 @@ button:focus {
 }
 
 .nav-item.logo.active img {
-  background: #d65106;
+  background: white;
   border-radius: 2px;
 }
+
+
+
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   border: none;
