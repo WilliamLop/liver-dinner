@@ -217,7 +217,7 @@ button:focus {
 }
 
 .nav-item.logo.active img {
-  background: white;
+  background: #F8F9FA;
   border-radius: 2px;
 }
 

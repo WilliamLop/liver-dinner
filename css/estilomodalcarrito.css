@@ -121,7 +121,11 @@ hr,p{
 }
 @media screen and (max-width: 460px)  {
     .aCarrito{
-       margin-left: 130px;
+       margin-left: 62px;
+    }
+    .imgCarrito{
+        margin-top: -117px;
+
     }
   }
 
