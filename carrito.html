@@ -49,7 +49,12 @@
           aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-				<li class="nav-item active logo"><a href="carrito.html" class="aCarrito"><img src="images/shopping-cart_icon-icons.com_72552.svg"  alt=""></a></li>
+				<li class="nav-item active logo">
+          <a href="carrito.html" class="aCarrito">
+            <img src="images/shopping-cart_icon-icons.com_72552.svg"  class="imgCarrito" alt="">
+        <span class="number-cart carrito" id="number-cart">0</span>
+      </a>
+    </li>
         <div class="collapse navbar-collapse" id="navbars-rs-food">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item "><a class="nav-link" href="index.html">Inicio</a></li>
@@ -82,13 +87,15 @@
   <div class="contact-box">
     <div class="container">
       <h4>Carrito de compras</h4>
-      <table class="table">
+      <table class="table table-hover table-borderless">
         <thead>
           <tr>
             <th scope="col">#</th>
             <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
             <th scope="col">Cantidad</th>
-            <th scope="col">Total</th>
+            <th scope="col">Sub-Total</th>
+            <th scope="col">Eliminar</th>
           </tr>
         </thead>
         <tbody id="items">
@@ -96,8 +103,9 @@
 
 
 
-          
         </tbody>
+          
+        </tr>
         <tfoot>
           <tr id="footer">
             <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
@@ -105,9 +113,9 @@
         </tfoot>
       </table><hr>
       <div class="botonesTabla">
-          <button type="button">Comprar </button>
-          <button type="button">Seguir Comprando </button>
-          <button type="button">Vaciar Carrito </button>
+          <button type="button" class="comprar">Comprar </button>
+          <button type="button" class="seguirComprando">Seguir Comprando </button>
+          <button type="button" class="vaciarCarrito" id="vaciar-Carrito">Vaciar Carrito </button>
       </div><hr>
     </div>
   </div>
@@ -117,9 +125,21 @@
     <tr>
       <th scope="row">id</th>
       <td>Café</td>
+      <td>$<strong></strong></td>
       <td><input type="number" id="cantidadTabla" name="cantidadTabla" class="cantidadTabla"/></td>
-      <td>$ <span>500</span></td>
+      <td>$ <span></span></td>
+      <td>
+      <img  class="borrar-platillo"   src="images2/eliminar.png" alt="eliminarProducto" id="btn-eliminar">
+      </td>
     </tr>
+  </template>
+
+  <template id="template-footer">
+    <th scope="row" colspan="2">Total productos</th>
+    <td></td>
+    <td>10</td>
+    <td class="font-weight-bold">$ <span>5000</span></td>
+  
   </template>
 
 

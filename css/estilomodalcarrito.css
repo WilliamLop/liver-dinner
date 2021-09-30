@@ -139,8 +139,111 @@ li.nav-item.logo {
 .cantidadTabla{
     width: 15%;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #D65106;
+    text-align: center;
+    background: transparent;
+    border-radius: 3px;
+
+
+}
+
+.cantidadTabla:hover{
+    background: white;
+    box-shadow: 1px 1px 3px #D65106;
+    border-bottom: 2px solid white
+}
+
+.borrar-platillo:hover{
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px red;
+    cursor: grab;
+
+    
 }
 
 
+div h4{
+    background: #14213d;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
 
+.comprar{
+    background: #0a9396;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 5px;
+    position: relative;
+    right: -890px;
+    width: 13%;
+    cursor: grab;
+
+}
+
+.seguirComprando{
+    background: #fca311;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-left: -150px;
+    cursor: grab;
+
+}
+.vaciarCarrito{
+    background: #d62828;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: grab;
+}
+
+.vaciarCarrito:hover{
+    background: #e63946;
+}
+.seguirComprando:hover{
+    background: #fcbf49;
+}
+
+.comprar:hover{
+    background: #2a9d8f;
+}
+
+
+@media screen and (min-width: 460px) {
+    .number-cart{
+      position: relative;
+      top: -51px;
+    
+    }
+  
+  }
+
+
+
+@media screen and (max-width: 1400px){
+    .number-cart{
+        margin-left: 73px;
+        position: relative;
+        top: -30px;
+     }
+     
+  
+ }  
+
+ 
+@media screen and (max-width: 1800px) {
+    .number-cart{
+        margin-left: 73px;
+        position: relative;
+        top: -30px;
+     }
+     
+  
+ }  

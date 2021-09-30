@@ -8,7 +8,19 @@ const template = document.getElementById("template-card").content;
 const fragment = document.createDocumentFragment();
 const cards = document.getElementById("productos");
 const img_id = document.getElementById("img-modal");
+const number_carrito = document.getElementById("number-cart");
+
+
+
 let carrito={};
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  if (localStorage.getItem("carrito")) {
+    carrito = JSON.parse(localStorage.getItem("carrito"));
+    total_carrito();
+  }
+});
+
 
 
 const articulos = [
@@ -18,7 +30,7 @@ const articulos = [
     descripcion: "Bebida con limon y algunas yerbas camperas.",
     precio: 8000,
     imagen: "images2/img-01.jpg",
-  },
+  },  
   {
     id: 1,
     nommbre_modal: "Bebida Especial 2",
@@ -171,15 +183,22 @@ function addcarrito(id, cantidad) {
 
   carrito[producto.id] = { ...producto };
   console.log(carrito);
-
   localStorage.setItem("carrito", JSON.stringify(carrito));
+    total_carrito();
 }
 
-$("#cantidad").change(function () {
+/* $("#cantidad").change(function () {
   var_cant_ultima = $("#cantidad").val();
   console.log(var_cant_ultima);
-});
+}); */
 
 function cat_act(){
   return Number($("#cantidad").val());
 }
+
+function total_carrito() {
+  const number_actual = Object.keys(carrito).length;
+  number_carrito.textContent = number_actual;
+}
+
+
