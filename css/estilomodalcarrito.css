@@ -49,20 +49,6 @@ hr,p{
     
 }
 
-@media screen and (max-width: 460px) {
-     .description{
-        display: block;
-        width: calc(90%);
-        margin-left: 17px;
-        margin-top: -8px;
-        padding-bottom: 0px;
-    
-    }
-    .descripcion{
-        width: 100%;
-    }
-   
-  }
 
 
 
@@ -115,24 +101,7 @@ hr,p{
     margin-top: -7px;
 }
 
-.nav-item.logo img:hover{
-    border-radius: 5px;
-    background: #ced2dc;
-}
-@media screen and (max-width: 460px)  {
-    .aCarrito{
-       margin-left: 62px;
-    }
-    .imgCarrito{
-        margin-top: -117px;
 
-    }
-  }
-
-li.nav-item.logo {
-
-    margin-left: 200px;
-}
 
 
 
@@ -215,35 +184,69 @@ div h4{
     background: #2a9d8f;
 }
 
+.nav-item.logo.active img:hover{
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #D55106;
+    cursor: grab;
+}
 
-@media screen and (min-width: 460px) {
-    .number-cart{
-      position: relative;
-      top: -51px;
-    
+
+
+
+@media screen and (max-width: 460px) {
+    .description{
+       display: block;
+       width: calc(90%);
+       margin-left: 17px;
+       margin-top: -8px;
+       padding-bottom: 0px;
+   
+   }
+   .descripcion{
+       width: 100%;
+   }
+  
+ }
+
+   
+
+
+  @media screen and (max-width: 320px) {
+    .nav-item.logo.active img{
+        margin-top: -1px;
+        margin-left: -53px;
+    }.number-cart{
+        top: 11px;
+    }
+  
+  }
+  @media screen and (max-width: 460px) {
+    li.nav-item.logo{
+      margin-top: -91px;
+      margin-left: 205px;
     }
   
   }
 
-
-
-@media screen and (max-width: 1400px){
-    .number-cart{
-        margin-left: 73px;
-        position: relative;
-        top: -30px;
-     }
-     
+  @media screen and (min-width: 1240px) {
+    li.nav-item.logo{
+        margin-top: -91px;
+      margin-left: 205px;
+    }.nav-item.logo.active img{
+        margin-top: 91px;
+        margin-left: -27px;
+    }.number-cart{
+        top: 51px;
+    }
   
- }  
+  }
 
- 
-@media screen and (max-width: 1800px) {
-    .number-cart{
-        margin-left: 73px;
-        position: relative;
-        top: -30px;
-     }
-     
   
- }  
+
+  
+
+
+
+
+
+
