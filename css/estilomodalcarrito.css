@@ -141,7 +141,7 @@ div h4{
     border-radius: 10px;
 }
 
-.comprar{
+/*.comprar{
     background: #0a9396;
     border-radius: 10px;
     color: white;
@@ -189,8 +189,63 @@ div h4{
     box-shadow: 1px 1px 3px #D55106;
     cursor: grab;
 }
+*/
+a:link{
+    color: white;
+}
+.comprar{
+    background: #00a896;
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.comprar:hover{
+    background: #005f73;
+}
+
+.seguirComprando{
+    background: #fca311;
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.seguirComprando:hover{
+    background: #fcbf49;
+    color: white;
+}
 
 
+.vaciarCarrito{
+    background: #e63946;
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+.vaciarCarrito:hover{
+    background: red;
+}
+
+.botonesTabla{
+    
+
+    display: flex;
+    justify-content: space-between;
+  
+    width: 100%;
+  
+}
+
+@media screen and (min-width: 1280px) {
+    .seguirComprando{
+        margin-left: -759px;
+    }
+}    
 
 
 @media screen and (max-width: 460px) {
@@ -241,10 +296,15 @@ div h4{
   
   }
 
-  
+.botonesTabla{
+    max-width: 100%;
+}
 
-  
-
+tfoot{
+    background: #edf6f9;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 
 
